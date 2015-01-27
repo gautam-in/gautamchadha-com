@@ -1,0 +1,33 @@
+{
+  "name": "gautamchadha-com",
+  "version": "1.0.0",
+  "description": "Gautam Chadha Website",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gchadha87/gautamchadha-com.git"
+  },
+  "author": "Gautam Chadha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gchadha87/gautamchadha-com/issues"
+  },
+  "homepage": "https://github.com/gchadha87/gautamchadha-com",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-uglify": "~0.7.0",
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jshint": "~0.11.0",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-cssmin": "~0.11.0",
+    "grunt-contrib-imagemin": "~0.9.2",
+    "grunt-contrib-compress": "~0.13.0",
+    "grunt-contrib-htmlmin": "~0.3.0",
+    "jit-grunt": "~0.9.0",
+    "grunt-bower-task": "~0.4.0",
+    "time-grunt": "~1.0.0"
+  }
+}
