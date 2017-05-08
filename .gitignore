@@ -29,3 +29,9 @@ node_modules
 
 #IDE project file
 .idea
+
+#SASS Cache folder
+.sass-cache
+
+#Mac Files
+.DS_Store

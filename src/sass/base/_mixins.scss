@@ -1,0 +1,53 @@
+/**
+ * CSS Keyframe
+ * @param {String} $name
+ * @example scss
+ * @include keyframes(keyname) { 0% { bottom: 40px; } 100% { bottom: 10px; } }
+ */
+
+@mixin gc-keyframes($name) {
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+/**
+ * CSS Animation
+ * @param {String} $delay
+ * @param {String} $duration
+ * @param {String} $animation
+ * @example scss
+ * .foobar { @include animation(0, 10s, animationName); }
+ */
+
+@mixin gc-animation ($delay, $duration, $animation, $iteration: 1, $easing: ease, $direction: normal) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-animation-direction: $direction;
+    -webkit-animation-timing-function: $easing;
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -moz-animation-iteration-count: $iteration;
+    -moz-animation-direction: $direction;
+    -moz-animation-timing-function: $easing;
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: $iteration;
+    animation-direction: $direction;
+    animation-timing-function: $easing;
+}

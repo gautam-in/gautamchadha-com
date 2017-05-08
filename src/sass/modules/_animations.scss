@@ -1,0 +1,26 @@
+@include gc-keyframes(logo-animation) {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+        border-radius: 0;
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+
+        border-radius: 100px;
+    }
+}
+@include gc-keyframes(title-animation) {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 35px;
+    }
+}
