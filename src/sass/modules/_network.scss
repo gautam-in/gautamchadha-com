@@ -1,0 +1,22 @@
+.network {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: $gc-offline-color;
+    color: $gc-offline-text;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    transform: translate3d(0, 100%, 0);
+    transition: 0.3s transform linear;
+}
+.offline {
+    border-bottom: 10px solid $gc-offline-color;
+    h2 {
+        color: $gc-offline-color;
+    }
+    .network {
+        transform: translate3d( 0, 0, 0 );
+    }
+}

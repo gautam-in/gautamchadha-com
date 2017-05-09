@@ -5,6 +5,7 @@ module.exports = function(grunt) {
         'clean:dev',
         'htmlmin:dev',
         'sass:dev',
+        'postcss:dev',
         'uglify:dev'
     ]);
 };

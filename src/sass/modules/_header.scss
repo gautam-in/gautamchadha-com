@@ -1,5 +1,6 @@
 .header {
     border-top: 10px solid $gc-primary-color;
+    transition: 0.5s all linear;
     padding: 50px 0 0;
     &__container {
         @extend .container;
@@ -91,9 +92,25 @@
     &__link {
         color: $gc-text-color;
         text-decoration: none;
+        transition: 0.5s all linear;
         &:hover, &:focus, &:visited {
             text-decoration: none;
             color: $gc-primary-color;
+        }
+    }
+}
+.offline {
+    .header {
+        border-top: 10px solid $gc-offline-color;
+        &__logo {
+            &__bg {
+                background: $gc-offline-color;
+            }
+        }
+    }
+    &__link {
+        &:hover, &:focus, &:visited {
+            color: $gc-offline-color;
         }
     }
 }

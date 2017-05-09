@@ -5,10 +5,12 @@ module.exports = function(grunt) {
         'clean:dev',
         'htmlmin:dev',
         'sass:dev',
+        'postcss:dev',
         'uglify:dev',
         'clean:dist',
         'htmlmin:dist',
         'sass:dist',
+        'postcss:dist',
         'uglify:dist'
     ]);
 };

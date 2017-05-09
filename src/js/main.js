@@ -107,14 +107,26 @@
             }
         }
 
+        function handleOffline() {
+            cache.body.classList.add( 'offline' );
+        }
+
+        function handleOnline() {
+            cache.body.classList.remove( 'offline' );
+        }
+
         return  {
             init: initializeAPI,
-            bind: bindEvents
+            bind: bindEvents,
+            handleOffline: handleOffline,
+            handleOnline: handleOnline
         }
     }());
     
     window.document.addEventListener( 'DOMContentLoaded', function() {
         API.init();
         API.bind();
+        window.addEventListener('online', API.handleOnline );
+		window.addEventListener('offline', API.handleOffline );
     } );
 }(window));
