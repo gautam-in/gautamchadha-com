@@ -6,7 +6,6 @@
                     '/',
                     '/index.html',
                     '/css/style.css',
-                    '/css/style.css.min',
                     '/js/main.js'
                 ] );
             } )
