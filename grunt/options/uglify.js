@@ -9,7 +9,8 @@ module.exports = function(grunt){
         },
         dist: {
             files: {
-                '<%= distPath %>/js/main.js': '<%= devPath %>/js/main.js'
+                '<%= distPath %>/js/main.js': '<%= devPath %>/js/main.js',
+                '<%= distPath %>/sw.js': '<%= devPath %>/sw.js'
             }
         }
     });
