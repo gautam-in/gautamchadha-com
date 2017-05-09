@@ -1,7 +1,7 @@
 ( function( sw ) {
     sw.addEventListener( 'install', function( event ) {
         event.waitUntil(
-            caches.open( 'v1' ).then( function ( cache ) {
+            caches.open( 'v1.0.1' ).then( function ( cache ) {
                 return cache.addAll( [
                     '/',
                     '/index.html',
@@ -17,7 +17,7 @@
             return fetch(event.request);
         }).then(function(r) {
             response = r;
-            caches.open('v1').then(function(cache) {
+            caches.open('v1.0.1').then(function(cache) {
                 cache.put(event.request, response);
             });
             return response.clone();

@@ -86,6 +86,9 @@
             cache.body = document.querySelector( 'body' );
             data.headerTop = 30;
             data.classAdded = false;
+            if ( false === navigator.onLine ) {
+                cache.body.classList.add( 'offline' );
+            }
         }
 
         function bindEvents () {
